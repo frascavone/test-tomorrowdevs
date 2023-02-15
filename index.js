@@ -4,12 +4,12 @@
 // the distance travelled (in kilometers) as its only parameter and returns
 // the total fare as its only result. Write a main program that demonstrates the function.
 
-const baseFare = 4;
-const plus = 0.25;
-
 const calculateTaxiFare = function (distance) {
   const meterDistance = distance * 1000;
+  const baseFare = 4;
+  const plus = 0.25;
   const totalFare = baseFare + (meterDistance / 140) * plus;
+  
   return totalFare;
 };
 
